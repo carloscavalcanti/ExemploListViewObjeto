@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayoutItem"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:gravity="left|center"
+	android:paddingBottom="5sp"
+	android:paddingTop="5sp"
+	android:paddingLeft="5sp">
+ 
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+			<TextView
+				android:id="@+id/txtNome"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="Nome"
+				android:textSize="20sp"
+				android:layout_marginLeft="15sp"/>
+			<TextView
+				android:id="@+id/txtDataNascimento"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="01/01/1999"
+				android:textSize="20sp"
+				android:layout_marginLeft="20sp" />
+	</LinearLayout>
+</LinearLayout>
