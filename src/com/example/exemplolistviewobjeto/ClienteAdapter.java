@@ -21,7 +21,6 @@ public class ClienteAdapter extends BaseAdapter {
 		private TextView txtDataNascimento;
 	}
 
-
 	public ClienteAdapter(Context context, List<Cliente> cliente) {
 		mInflater = LayoutInflater.from(context);
 		this.clientes = cliente;

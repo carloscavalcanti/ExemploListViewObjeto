@@ -12,7 +12,7 @@ public class MainActivity extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_activity);
+        
         List<Cliente> clientes = new ArrayList<Cliente>();
         
         clientes.add(new Cliente("Fulaninha", new Date(1999, 3, 12)));
