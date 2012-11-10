@@ -1,5 +1,6 @@
 package com.example.exemplolistviewobjeto;
 
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 import android.content.Context;
@@ -61,7 +62,10 @@ public class ClienteAdapter extends BaseAdapter {
 
 		Cliente cliente = clientes.get(posicao);
 		holder.txtNome.setText(cliente.getNome());
-		holder.txtDataNascimento.setText(cliente.getDataNascimento().toGMTString());
+		
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+		String dataFormatada = simpleDateFormat.format(cliente.getDataNascimento());
+		holder.txtDataNascimento.setText(dataFormatada);
 
 		return convertView;
 	}
